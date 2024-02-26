@@ -78,7 +78,7 @@ class Command(BaseCommand):
         self.stdout.write("URL Patterns:\n")
         # Print each URL pattern
         for url in url_patterns:
-            self.stdout.write(self.style.SUCCESS(f"\tPattern: {url['pattern']}"))
+            self.stdout.write(self.style.SUCCESS(f"URL Path: {url['pattern']}"))
             self.stdout.write(self.style.SUCCESS(f"\tView: {url['callback']}"))
             self.stdout.write(self.style.SUCCESS(f"\tName: {url['name']}"))
             if url['namespace']:
